@@ -3,7 +3,7 @@
   ini_set("display_errors", 1);
 
   // do {
-  $tempfile = tempnam('/temp', 'source');
+  $tempfile = tempnam('', 'source');
   // }while(!@rename($tempfile, $tempfile.'.c'));
   @rename($tempfile, $tempfile.'.c');
 
