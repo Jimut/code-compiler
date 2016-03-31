@@ -1,0 +1,11 @@
+{
+    "name": "jem/code-compiler",
+    "description": "Code compiler with PHP",
+    "authors": [
+        {
+            "name": "Jimut",
+            "email": "jemdhali67@gmail.com"
+        }
+    ],
+    "require": {}
+}
