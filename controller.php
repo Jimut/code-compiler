@@ -1,12 +1,12 @@
 <?php
 
   // do {
-  $tempfile = tempnam('C:/xampp/htdocs/jem/code-compiler/temp', 'source');
+  $tempfile = tempnam('/temp', 'source');
   // }while(!@rename($tempfile, $tempfile.'.c'));
   @rename($tempfile, $tempfile.'.c');
 
   $tempfile .= '.c';
-  $exefile = 'test.exe';
+  $exefile = 'test.o';
 
   file_put_contents($tempfile, $_REQUEST['c_code']);
 
