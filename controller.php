@@ -10,6 +10,8 @@
   $tempfile .= '.c';
   $exefile = 'test.o';
 
+  echo $tempfile;
+
   file_put_contents($tempfile, $_REQUEST['c_code']);
 
   // invoke GCC
@@ -21,4 +23,4 @@
 
   echo '<pre>'.htmlspecialchars($output,ENT_QUOTES).'</pre>';
 
-  unlink($tempfile);
+  // unlink($tempfile);
