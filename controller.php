@@ -17,7 +17,7 @@
   // invoke GCC
   $output = shell_exec('gcc '.escapeshellarg($tempfile).' -o '.escapeshellarg($exefile));
   // set sticky bit
-  // $output.= shell_exec('sudo +s '.escapeshellarg($exefile)); // I need to set this on my server
+  $output.= shell_exec('sudo +s '.escapeshellarg($exefile)); // I need to set this on my server
   // run the created program
   $output .= shell_exec(escapeshellarg($exefile));
 
